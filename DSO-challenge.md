@@ -4,9 +4,9 @@
 
 ## Problem Statement
 
-You are tasked with automating the deployment process of a microservice. The microservice's source code is stored in a GitLab repository, and it needs to be deployed to a Docker Swarm cluster. The deployment process should be automated using Jenkins and Ansible. The pipeline should include the following steps:
+You are tasked with automating the deployment process of a microservice. The microservice's source code is stored in a Github repository, and it needs to be deployed to a Docker Swarm cluster. The deployment process should be automated using Jenkins and Ansible. The pipeline should include the following steps:
 
-1. **Code Checkout:** Retrieve the latest code from the GitLab repository.
+1. **Code Checkout:** Retrieve the latest code from the Github repository.
 2. **Build Docker Image:** Build a Docker image from the checked-out code.
 3. **Push Docker Image:** Push the built Docker image to a Docker registry.
 4. **Deploy to Docker Swarm:** Deploy the new Docker image to a Docker Swarm cluster.
@@ -15,7 +15,7 @@ You are tasked with automating the deployment process of a microservice. The mic
 ## Requirements
 
 - **Code Checkout:**
-  - Use GitLab as the source repository.
+  - Use Github as the source repository.
   - Ensure the latest commit from the main branch is checked out.
 
 - **Build Docker Image:**
@@ -37,7 +37,7 @@ You are tasked with automating the deployment process of a microservice. The mic
 
 ## Provided Materials
 
-- Access to a GitLab repository with the microservice source code.
+- Access to a Github repository with the microservice source code.
 - Jenkins instance configured and accessible.
 - Docker registry credentials.
 - Docker Swarm cluster with necessary access credentials.
@@ -50,7 +50,7 @@ You are tasked with automating the deployment process of a microservice. The mic
    - Create a Jenkins pipeline that performs the code checkout, Docker image build, and push to the Docker registry.
 
 2. **Write Dockerfile:**
-   - Create a Dockerfile in the GitLab repository for building the microservice.
+   - Create a Dockerfile in the Github repository for building the microservice.
 
 3. **Configure Ansible for Deployment:**
    - Write an Ansible playbook to deploy the Docker image to the Docker Swarm cluster.
