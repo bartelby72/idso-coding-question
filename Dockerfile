@@ -1,6 +1,10 @@
-#
-# FILL ME IN
-#
+FROM python:3.9-slim
 
-# Run app.py when the container launches
+WORKDIR /app
+
+COPY flask_app/requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+
+COPY flask_app /app
+
 CMD ["python", "app.py"]
